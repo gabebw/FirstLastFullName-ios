@@ -7,11 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "NameCombiner.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *firstNameField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameField;
 @property (weak, nonatomic) IBOutlet UILabel *fullNameField;
+@property (strong, nonatomic) NameCombiner *nameCombiner;
 
 @end
 
@@ -21,6 +23,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.nameCombiner = [[NameCombiner alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -32,7 +35,7 @@
 - (IBAction)go:(id)sender {
     NSString *firstName = self.firstNameField.text;
     NSString *lastName = self.lastNameField.text;
-    NSString *fullName = [NSString stringWithFormat:@"%@ %@", firstName, lastName];
+    NSString *fullName = [self.nameCombiner combine:firstName lastName:lastName];
     self.fullNameField.text = fullName;
 }
 

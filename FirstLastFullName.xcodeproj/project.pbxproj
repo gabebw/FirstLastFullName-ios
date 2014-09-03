@@ -22,6 +22,7 @@
 		002B4C0219B7CC8D003DD082 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002B4BE119B7CC8C003DD082 /* UIKit.framework */; };
 		002B4C0A19B7CC8D003DD082 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 002B4C0819B7CC8D003DD082 /* InfoPlist.strings */; };
 		002B4C0C19B7CC8D003DD082 /* FirstLastFullNameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B4C0B19B7CC8D003DD082 /* FirstLastFullNameTests.m */; };
+		002B4C1719B7D27A003DD082 /* NameCombiner.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B4C1619B7D27A003DD082 /* NameCombiner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		002B4C0719B7CC8D003DD082 /* FirstLastFullNameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FirstLastFullNameTests-Info.plist"; sourceTree = "<group>"; };
 		002B4C0919B7CC8D003DD082 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		002B4C0B19B7CC8D003DD082 /* FirstLastFullNameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstLastFullNameTests.m; sourceTree = "<group>"; };
+		002B4C1519B7D27A003DD082 /* NameCombiner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameCombiner.h; sourceTree = "<group>"; };
+		002B4C1619B7D27A003DD082 /* NameCombiner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameCombiner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				002B4BEC19B7CC8C003DD082 /* AppDelegate.h */,
 				002B4BED19B7CC8C003DD082 /* AppDelegate.m */,
 				002B4BEF19B7CC8C003DD082 /* Main_iPhone.storyboard */,
+				002B4C1519B7D27A003DD082 /* NameCombiner.h */,
+				002B4C1619B7D27A003DD082 /* NameCombiner.m */,
 				002B4BF219B7CC8C003DD082 /* Main_iPad.storyboard */,
 				002B4BF519B7CC8C003DD082 /* ViewController.h */,
 				002B4BF619B7CC8C003DD082 /* ViewController.m */,
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				002B4BF719B7CC8C003DD082 /* ViewController.m in Sources */,
+				002B4C1719B7D27A003DD082 /* NameCombiner.m in Sources */,
 				002B4BEE19B7CC8C003DD082 /* AppDelegate.m in Sources */,
 				002B4BEA19B7CC8C003DD082 /* main.m in Sources */,
 			);
