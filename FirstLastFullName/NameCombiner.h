@@ -10,6 +10,9 @@
 
 @interface NameCombiner : NSObject
 
-- (NSString *)combine:(NSString *)firstName lastName:(NSString *)lastName;
+@property (strong, nonatomic) NSString *firstName;
+@property (strong, nonatomic) NSString *lastName;
+
+- (NSString *)combine;
 
 @end

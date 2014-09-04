@@ -32,10 +32,20 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)go:(id)sender {
+- (IBAction)didChangeFirstName:(id)sender {
     NSString *firstName = self.firstNameField.text;
+    self.nameCombiner.firstName = firstName;
+    [self updateFullName];
+}
+
+- (IBAction)didChangeLastName:(id)sender {
     NSString *lastName = self.lastNameField.text;
-    NSString *fullName = [self.nameCombiner combine:firstName lastName:lastName];
+    self.nameCombiner.lastName = lastName;
+    [self updateFullName];
+}
+
+-(void)updateFullName {
+    NSString *fullName = [self.nameCombiner combine];
     self.fullNameField.text = fullName;
 }
 
